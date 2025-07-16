@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Pelican Collection Demo - Blog</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="/theme/css/bulma.css" />
+       <link rel="stylesheet" type="text/css" href="/theme/css/bulma-carousel.min.css" />
+       <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" />
+  </head>
+
+  <body>
+    <header>
+      <!--<hgroup><h1><a href="/">Pelican Collection Demo</a></h1></hgroup>-->
+      <nav class="navbar my-2" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-size-4 has-text-weight-medium" href="/">Pelican Collection Demo</a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div> <!-- /navbar-brand -->
+          <div id="navMenu" class="navbar-menu is-size-5">
+            <div class="navbar-start"></div> <!-- /navbar-start -->
+            <div class="navbar-end">
+                <a class="navbar-item" href="/category/blog.html"  aria-current="page" >Blog</a></li>
+                <a class="navbar-item" href="/category/collection.html" >Collection</a></li>
+                <a class="navbar-item" href="/category/exhibits.html" >Exhibits</a></li>
+                <a class="navbar-item" href="/category/getting-started.html" >getting-started</a></li>
+                <a class="navbar-item" href="/pages/about-this-demo.html" >About</a></li>
+            </div> <!-- /navbar-end -->
+          </div> <!-- /navbar-menu -->
+        </div> <!-- /container -->
+      </nav>
+    </header>
+    <main class="section content">
+      <div class="container">
+      <h2>Blog</h2>
+
+
+        <article class="section">
+            <header><h3><a href="/launch.html" rel="bookmark" title="Permalink to Launch">Launch</a></h3> </header>
+            <section><p>Today, the first demo site launched.</p></section>
+            <footer class="mt-2 has-text-grey">
+                <div>Published: <time datetime="2024-09-17T21:36:00+02:00"> Tue 17 September 2024 </time></div>
+                <address>By
+                        <a href="/author/shawn.html">Shawn</a>
+                </address>
+            </footer>
+        </article>
+
+
+
+      </div> <!-- /container -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <address>
+          Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+          which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+        </address>
+      </div> <!-- /container -->
+    </footer>
+    <script type="text/javascript" src="/theme/js/bulma-carousel.min.js"></script>
+    <script type="text/javascript">
+//////////////////
+// Main Menu    //
+//////////////////
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+
+});
+
+//////////////////
+// Carousel     //
+//////////////////
+document.addEventListener('DOMContentLoaded', () => {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        bulmaCarousel.attach(carousel, {
+          loop: true
+        });
+    });
+});
+    </script>
+  </body>
+</html>
