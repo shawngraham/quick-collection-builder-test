@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+          <title>Pelican Collection Demo - Portrait of Sheikh Ali Mirza</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="/theme/css/bulma.css" />
+       <link rel="stylesheet" type="text/css" href="/theme/css/bulma-carousel.min.css" />
+       <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" />
+
+
+
+
+
+
+    <script src="/theme/tify/tify.js"></script>
+    <link rel="stylesheet" href="/theme/tify/tify.css" />
+  </head>
+
+  <body>
+    <header>
+      <!--<hgroup><h1><a href="/">Pelican Collection Demo</a></h1></hgroup>-->
+      <nav class="navbar my-2" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-size-4 has-text-weight-medium" href="/">Pelican Collection Demo</a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div> <!-- /navbar-brand -->
+          <div id="navMenu" class="navbar-menu is-size-5">
+            <div class="navbar-start"></div> <!-- /navbar-start -->
+            <div class="navbar-end">
+                <a class="navbar-item" href="/category/blog.html" >Blog</a></li>
+                <a class="navbar-item" href="/category/collection.html"  aria-current="page" >Collection</a></li>
+                <a class="navbar-item" href="/category/exhibits.html" >Exhibits</a></li>
+                <a class="navbar-item" href="/category/getting-started.html" >getting-started</a></li>
+                <a class="navbar-item" href="/pages/about-this-demo.html" >About</a></li>
+            </div> <!-- /navbar-end -->
+          </div> <!-- /navbar-menu -->
+        </div> <!-- /container -->
+      </nav>
+    </header>
+    <main class="section content">
+      <div class="container">
+<article class="section collection-item-full">
+  <header>
+    <h2>
+      <a href="/portrait-of-sheikh-ali-mirza.html" rel="bookmark"
+         title="Permalink to Portrait of Sheikh Ali Mirza">Portrait of Sheikh Ali Mirza</a></h2>
+ 
+  </header>
+  <div class="image-display iiif">
+      <div id="tify-viewer" style="width: 100%; height: 550px;">
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          new Tify({
+            container: '#tify-viewer',
+            manifestUrl: 'http://localhost:8000/images/derivatives/iiif/obj11/manifest.json'
+          });
+        });
+      </script>
+  </div>
+  <div class="columns mt-2">
+    <div class="column is-two-thirds is-size-5">
+      “Portrait of Sheikh Ali Mirza” <i>by</i> Unknown
+    </div>
+    <aside class="column">
+      <dl>
+        <dt>Label</dt>
+        <dd>        Portrait of Sheikh Ali Mirza
+</dd>
+        <dt>Artist</dt>
+        <dd>        Unknown
+</dd>
+        <dt>Type</dt>
+        <dd>        portrait
+</dd>
+        <dt>Location</dt>
+        <dd>        Iran
+</dd>
+        <dt>Current Location</dt>
+        <dd>        The Museum of Islamic Art, Qatar
+</dd>
+        <dt>Date</dt>
+        <dd>        1800 - 1850
+</dd>
+        <dt>Source</dt>
+        <dd>          <a href="https://commons.wikimedia.org/wiki/File:Unknown,_Iran,_early_19th_Century_-_Portrait_of_Sheikh_Ali_Mirza_-_Google_Art_Project.jpg">https://commons.wikimedia.org/wiki/File:Unknown,_Iran,_early_19th_Century_-_Portrait_of_Sheikh_Ali_Mirza_-_Google_Art_Project.jpg</a>
+</dd>
+      </dl>
+    </aside>
+  </div>
+</article>
+      </div> <!-- /container -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <address>
+          Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+          which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+        </address>
+      </div> <!-- /container -->
+    </footer>
+    <script type="text/javascript" src="/theme/js/bulma-carousel.min.js"></script>
+    <script type="text/javascript">
+//////////////////
+// Main Menu    //
+//////////////////
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+
+});
+
+//////////////////
+// Carousel     //
+//////////////////
+document.addEventListener('DOMContentLoaded', () => {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        bulmaCarousel.attach(carousel, {
+          loop: true
+        });
+    });
+});
+    </script>
+  </body>
+</html>
